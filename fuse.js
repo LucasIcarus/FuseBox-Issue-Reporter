@@ -1,17 +1,12 @@
-const build = require('fuse-box');
+const { FuseBox } = require('fusebox');
 
-const { FuseBox } = build;
-
-const fuseBox = FuseBox.init({
-    homeDir: './src',
-    sourceMap: {
-        bundleReference: "sourcemaps.js.map",
-        outFile: "./dist/sourcemaps.js.map",
-    },
+const fsbx = FuseBox.init({
+    homeDir: './',
+    log: true,
+    debug: true,
     outFile: './dist/main-fuse.js',
-    plugins: [
-        build.BabelPlugin()
-    ]
+    cache: false,
+    // standalone : false
 });
 
-fuseBox.bundle('>index.js');
+fsbx.bundle('>src/index.js');

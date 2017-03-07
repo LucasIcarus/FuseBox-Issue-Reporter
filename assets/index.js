@@ -1,3 +1,3 @@
-import SomeConstantString from '../others';
+const SomeConstantString = require('../others');
 
-export default { a: SomeConstantString };
+modules.exports = { a: SomeConstantString };

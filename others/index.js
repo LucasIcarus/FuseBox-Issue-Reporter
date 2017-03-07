@@ -1,1 +1,1 @@
-export default 'Constant String';
+module.exports = 'Constant String';
