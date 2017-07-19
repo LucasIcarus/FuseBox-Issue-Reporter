@@ -1,3 +1,5 @@
 const Part = 'release';
 
-export default Part;
+const Ju = '2009'
+
+export default { Part, Ju };
